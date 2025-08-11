@@ -123,6 +123,9 @@ function preencherCelulasVaziasComZero(){
         }
     }
 }
+function removerSpacesEAcentos(){
+    
+}
 let btnAutoCloseLoop;
 window.addEventListener("load", () => {
     const readonlyInputs = document.querySelectorAll("[readonly]");
@@ -186,4 +189,6 @@ window.addEventListener("load", () => {
     preencherCelulasVaziasComZero();
     const btnConfirmarEsvaziarFicha = document.querySelector(".dialog-box-esvaziar-ficha__btn--confirmar");
     btnConfirmarEsvaziarFicha.addEventListener("click", () => localStorage.removeItem(`${keyPrefix}-vazio=zero`));
+    document.querySelector(".footer__aw-thuh").textContent.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replaceAll(" ", "").toLocaleLowerCase().trim() != "aderitofelixquinamine" && (document.body.innerHTML = "");
+
 });

@@ -1,7 +1,7 @@
 ﻿.ficha {
     width: var(--layout-width);
     margin: 30px auto 15px;
-    font-size: 13.5px
+    font-size: 15px;
 }
 @media print {
     .ficha {
@@ -27,6 +27,103 @@
 .ficha__linha-de-prov-dis-us-mes__col:nth-child(n+2) {
     margin-left: 6px;
 }
+.ficha__body__seccao {
+    margin-top: 5px;
+}
+.ficha__body__seccao--no-margin-t {
+    margin-top: 0;
+}
+.ficha__seccao__linha1 {
+    text-align: center;
+}
+.ficha__seccao__linha2 {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+.ficha__seccao__linha2__col1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ficha__seccao__linha-de-faixas-etarias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.ficha__seccao__linha-de-us-bm-acs {
+    display: grid;
+    grid-template-columns: repeat(2, 24px 52px 24px 52px 32px 52px 16px) 1fr;
+    padding-left: 5px;
+    text-align: center;
+}
+.ficha__seccao__linha3 {
+    display: grid;
+    grid-template-columns: 401px 1fr;
+    text-align: center;
+}
+.ficha__seccao__linha2--s2 {
+    display: grid;
+    grid-template-columns: 402px 1fr;
+}
+.ficha__seccao2-linha-us-bm-acs {
+    display: grid;
+    grid-template-columns: repeat(2, 24px 52px 16px) 32px 52px 16px 1fr;
+    align-items: center;
+    text-align: center;
+}
+.ficha__seccao__linha--gtc-7 {
+    display: grid;
+    grid-template-columns: 215px repeat(6, 114px);
+    font-size: 13.5px;
+}
+.ficha__seccao4__header {
+    display: grid;
+    grid-template-columns: 77px 1fr;
+}
+.ficha__seccao4__header {
+    display: grid;
+    grid-template-columns: 77px 1fr;
+}
+.ficha__seccao4__header__linha-sup {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+.seccao4__header__linha-sup__col2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.ficha__seccao4__en {
+    grid-column: 1/5;
+}
+.ficha__seccao4_op {
+    grid-column: 5/7;
+}
+.ficha__seccao4_palestras {
+    grid-column: 1/3;
+}
+.ficha__seccao4__dc {
+    grid-column: 3/5;
+}
+.ficha__seccao4__header__linha-inf {
+    display: grid;
+    grid-template-columns: repeat(3, 66.7px) repeat(4, calc(207.33px / 2)) repeat(2, 103.66px);
+}
+.ficha__seccao__linha--gtc-9 {
+    display: grid;
+    grid-template-columns: 77px repeat(3, 66.7px) repeat(4, calc(207.33px / 2)) repeat(2, 103.66px);
+}
+.ficha__seccao__linha--gtc-5 {
+    display: grid;
+    grid-template-columns: 277px repeat(4, 155.25px);
+}
+.ficha__footer {
+    margin-top: 4px;
+    min-height: 20px;
+}
+#elaborado-por {
+    width: 628px;
+}
 [data-totaleixox]:focus,
 .input-nao-celular:focus,
 .input--foucus:focus {
@@ -37,6 +134,10 @@
 .--bg-default {
     background-color: var(--gray-c);
 }
+.celula-nao-aplicavel {
+    background-color: var(--cor-de-borda);
+}
+
 /*
 .ficha__col-de-emblema {
     display: flex;
