@@ -1,5 +1,5 @@
 "use strict"
-var keyPrefix = "trmprnii";
+var keyPrefix = "trmn";
 function desfoqueDoFundo(accao) {
     const desfoque = document.querySelector(".desfoque");
     accao === "desfocar" ? 
@@ -24,11 +24,23 @@ function alertarSobre(msg) {
     dialogBoxDefault.classList.add("--open");
 }
 function destacarCelulasComConteudoOmisso() {
-    const celulas = document.querySelectorAll("[data-totaleixox], [readonly]");
+    const celulas = document.querySelectorAll("[data-total], .input-celular--focus, readonly");
     let celulasSaturadas = 0;
     for(const c of celulas) {
         c.classList.remove("input--bg-color-danger");
-        if(c.value.length > 9) {
+        if(c.clientWidth < 55 && c.value.length > 6) {
+            c.classList.add("input--bg-color-danger");
+            celulasSaturadas++;
+        } else if(c.clientWidth < 70 && c.value.length > 7) {
+            c.classList.add("input--bg-color-danger");
+            celulasSaturadas++;
+        } else if(c.clientWidth < 105 && c.value.length > 12) {
+            c.classList.add("input--bg-color-danger");
+            celulasSaturadas++;
+        } else if(c.clientWidth < 120 && c.value.length > 14) {
+            c.classList.add("input--bg-color-danger");
+            celulasSaturadas++;
+        } else if(c.clientWidth > 120 && c.value.length > 18) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
         }
@@ -44,7 +56,7 @@ function destacarCelulasComConteudoOmisso() {
     }  
 }
 function removerDestaqueDeRedCells() {
-    const celulas = document.querySelectorAll("[data-totaleixox], [readonly]");
+    const celulas = document.querySelectorAll("[data-total], .input-celular--focus, readonly");
     for (const c of celulas) c.classList.remove("input--bg-color-danger");
 }
 function removerBordaDoMovitoDeRedCells() {
@@ -123,9 +135,6 @@ function preencherCelulasVaziasComZero(){
         }
     }
 }
-function removerSpacesEAcentos(){
-    
-}
 let btnAutoCloseLoop;
 window.addEventListener("load", () => {
     const readonlyInputs = document.querySelectorAll("[readonly]");
@@ -133,7 +142,7 @@ window.addEventListener("load", () => {
         const readonlyInputsMsg = "Os totais estão inacessíveis para assegurar que não sejam modificados.";
         alertarSobre(readonlyInputsMsg);
     }));
-    const inputsCelulares = document.querySelectorAll("[data-totaleixox]");
+    const inputsCelulares = document.querySelectorAll("[data-total], .input-celular--focus, readonly");
     inputsCelulares.forEach (inputCelular => inputCelular.addEventListener("input", destacarCelulasComConteudoOmisso));
     destacarCelulasComConteudoOmisso();
     aqd.mostrarAviso();

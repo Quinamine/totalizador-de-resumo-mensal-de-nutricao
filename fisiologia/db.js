@@ -740,18 +740,19 @@ function listarUSs() {
         }
     }
 }
-function sugerirMesActual() {
-    const mesDatalist = document.getElementById("datalist-meses");
+function sugerirMesEanoActuais() {
+    const mesDatalist = document.getElementById("datalist-mes-ano");
     const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
     const tempo = new Date();
     let mesIndex = tempo.getMonth();
-    mesDatalist.innerHTML = `<option value="${meses[mesIndex]}"></option>`;
+    let anoActual = tempo.getFullYear();
+    mesDatalist.innerHTML = `<option value="${meses[mesIndex]}/${anoActual}"></option>`;
 }
 window.addEventListener("load", () => {
     listarProvincias();
     listarDistritos();
     listarUSs();
-    sugerirMesActual();
+    sugerirMesEanoActuais();
     const inputProv = document.getElementById("input-provincia");
     inputProv.addEventListener("input", listarDistritos);
     const inputDistrito = document.getElementById("input-distrito");

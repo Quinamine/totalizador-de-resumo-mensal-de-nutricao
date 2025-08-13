@@ -80,7 +80,7 @@
                         <h1 class="ficha__titulo">NUTRIÇÃO - FICHA MENSAL</h1>
                         <figure>
                             <img src="imagens/emblema.png" alt="Emblema da República de Moçambique" class="ficha__emblema">
-                            <figcaption class="--fw-700">MINISTÉRIO DA SAÚDE</figcaption>
+                            <figcaption class="txt-center --fw-700">MINISTÉRIO DA SAÚDE</figcaption>
                         </figure>
                     </div>
                     <div class="ficha__header__linha-de-prov-dis-us-mes --display-flex-y-center">
@@ -100,340 +100,342 @@
                             <datalist id="datalist-us"></datalist>
                         </div>
                         <div class="ficha__linha-de-prov-dis-us-mes__col --display-flex-y-center">
-                            <label for="input-meses">Mês/Ano:</label>
-                            <input type="text" id="input-meses" class="input-nao-celular --border-b --fw-700" list="datalist-meses">
-                            <datalist id="datalist-meses"></datalist>
+                            <label for="input-mes-ano">Mês/Ano:</label>
+                            <input type="text" id="input-mes-ano" class="input-nao-celular --border-b --fw-700" list="datalist-mes-ano">
+                            <datalist id="datalist-mes-ano"></datalist>
                         </div>
                     </div>
                 </header>
                 <div class="ficha__body">
-                    <div class="ficha__body__seccao ficha__body__seccao--no-margin-t">
-                        <div class="ficha__seccao__linha1 --bg-default --border-thick">
+                    <div class="ficha__body__seccao ficha__body__seccao--s1">
+                        <div class="ficha__seccao__titulo --display-flex-xy-center --bg-default --border-thick">
                             <span class="--fw-700">Mod. SIS - N03 - VITAMINA "A"</span>
                         </div>
-                        <div class="ficha__seccao__linha2 --border-l --border-r --border-b">
-                            <div class="ficha__seccao__linha2__col1">
-                                <span>CRIANÇAS <br>(6 - 59 meses)</span>
+                        <div class="ficha__seccao1__linha2 --border-l --border-r --border-b">
+                            <div class="--display-flex-xy-center txt-center">
+                                <span class="--fw-700">CRIANÇAS <br>(6 - 59 meses)</span>
                             </div>
-                            <div class="ficha__seccao__linha2__col2 --border-l --fw-700">
-                                <div class="ficha__seccao__linha-de-faixas-etarias --border-b --bg-default">
-                                    <div><span>06 - 11 MESES</span></div>
-                                    <div class="--border-l"><span>12 - 59 MESES</span></div>
-                                    <div class="--border-l"><span>TOTAL GERAL</span></div>
+                            <div class="--border-l --fw-700">
+                                <div class="ficha__seccao1__linha-de-faixas-etarias --border-b --bg-default">
+                                    <div class="--display-flex-xy-center"><span>06 - 11 MESES</span></div>
+                                    <div class="--display-flex-xy-center --border-l"><span>12 - 59 MESES</span></div>
+                                    <div class="--display-flex-xy-center --border-l"><span>TOTAL GERAL</span></div>
                                 </div>
-                                <div class="ficha__seccao__linha-de-us-bm-acs">
+                                <div class="ficha__seccao1__linha-de-us-bm-acs">
                                     <label for="vit-a-us-6-11m">US</label>
-                                    <input type="number" id="vit-a-us-6-11m" class="--border-b">
+                                    <input type="number" min="0" id="vit-a-us-6-11m" data-total="l1-c1-a-c6" data-totaloutput="l1-c7" class="--border-b">
                                     <label for="vit-a-bm-6-11m">BM</label>
-                                    <input type="number" id="vit-a-bm-6-11m" class="--border-b">
+                                    <input type="number" min="0" id="vit-a-bm-6-11m" data-total="l1-c1-a-c6" data-totaloutput="l1-c7" class="--border-b">
                                     <label for="vit-a-acs-6-11m">ACS</label>
-                                    <input type="number" id="vit-a-acs-6-11m" class="--border-b">
+                                    <input type="number" min="0" id="vit-a-acs-6-11m" data-total="l1-c1-a-c6" data-totaloutput="l1-c7" class="--border-b">
                                     <span>&plus;</span>
                                     <label for="vit-a-us-12-59m">US</label>
-                                    <input type="number" id="vit-a-us-12-59m" class="--border-b">
+                                    <input type="number" min="0" id="vit-a-us-12-59m" data-total="l1-c1-a-c6" data-totaloutput="l1-c7" class="--border-b">
                                     <label for="vit-a-bm-12-59m">BM</label>
-                                    <input type="number" id="vit-a-bm-12-59m" class="--border-b">
+                                    <input type="number" min="0" id="vit-a-bm-12-59m" data-total="l1-c1-a-c6" data-totaloutput="l1-c7" class="--border-b">
                                     <label for="vit-a-acs-12-59m">ACS</label>
-                                    <input type="number" id="vit-a-acs-12-59m" class="--border-b">
+                                    <input type="number" min="0" id="vit-a-acs-12-59m" data-total="l1-c1-a-c6" data-totaloutput="l1-c7" class="--border-b">
                                     <span>&equals;</span>
-                                    <input type="number" readonly class="--border-b">
+                                    <input type="number" readonly class="l1-c7 --border-b">
                                 </div>
                             </div>
                         </div>
-                        <div class="ficha__seccao__linha3 --border-l --border-r --border-b">
-                            <div class="--border-r"><label for="mpp" class="--fw-700">MULHERES PÓS-PARTO</label></div>
-                            <input type="number" id="mpp" class="input--focus">
+                        <div class="ficha__seccao__linha--gtc-2 --border-l --border-r --border-b">
+                            <div class="--border-r --display-flex-xy-center"><label for="mpp" class="--fw-700">MULHERES PÓS-PARTO</label></div>
+                            <input type="number" min="0" id="mpp" class="input-celular--focus">
                         </div>
                     </div>
                     <div class="ficha__body__seccao">
-                        <div class="ficha__seccao__linha1 --bg-default --border-thick">
+                        <div class="ficha__seccao__titulo --display-flex-xy-center --bg-default --border-thick">
                             <span class="--fw-700">Mod. SIS - N07 - DESPARASITAÇÃO</span>
                         </div>
-                        <div class="ficha__seccao__linha2--s2 --border-b">
-                            <div class="ficha__seccao__linha2__col1 --border-r --border-l">
+                        <div class="ficha__seccao__linha--gtc-2 --border-l --border-r --border-b">
+                            <div class="--display-xy-center txt-center --border-r">
                                 <span><b>CRIANÇAS (12 - 59 meses)</b> <br><small>(Mebendazol ou Albendazol)</small></span>
                             </div>
-                            <div class="ficha__seccao2-linha-us-bm-acs --border-r --fw-700">
+                            <div class="ficha__seccao2-linha-us-bm-acs --fw-700">
                                 <label for="desparasitacao-us">US</label>
-                                <input type="number" id="desparasitacao-us" class="--border-b">
+                                <input type="number" min="0" id="desparasitacao-us" data-total="l3-c1-a-c3" data-totaloutput="l3-c4" class="--border-b">
                                 <span>&plus;</span>
                                 <label for="desparasitacao-bm">BM</label>
-                                <input type="number" id="desparasitacao-bm" class="--border-b">
+                                <input type="number" min="0" id="desparasitacao-bm" data-total="l3-c1-a-c3" data-totaloutput="l3-c4" class="--border-b">
                                 <span>&plus;</span>
                                 <label for="desparasitacao-acs">ACS</label>
-                                <input type="number" id="desparasitacao-acs" class="--border-b">
+                                <input type="number" min="0" id="desparasitacao-acs" data-total="l3-c1-a-c3" data-totaloutput="l3-c4" class="--border-b">
                                 <span>&equals;</span>
-                                <input type="number" readonly class="--border-b">
+                                <input type="number" readonly class="l3-c4 --border-b">
                             </div>
                         </div>
-                        <div class="ficha__seccao__linha3 --border-l --border-r --border-b">
-                            <div class="--border-r"><span><b>MULHERES GRÁVIDAS</b> <br><small>(Mebendazol 2<sup>o</sup> ou 3<sup>o</sup> trimestre)</small></span></div>
-                            <div class="ficha__seccao2-linha-us-bm-acs">
+                        <div class="ficha__seccao__linha--gtc-2 --border-l --border-r --border-b">
+                            <div class="--border-r"><span><b>MULHERES GRÁVIDAS</b> <br><small>(Mebendazol 2º ou 3º trimestre)</small></span></div>
+                            <div class="ficha__seccao2-linha-us-bm-acs --fw-700">
                                 <label for="desparasitacao-mg-us">US</label>
-                                <input type="number" id="desparasitacao-mg-us" class="--border-b">
+                                <input type="number" min="0" id="desparasitacao-mg-us" data-total="l4-c1-a-c3" data-totaloutput="l4-c4" class="--border-b">
                                 <span>&plus;</span>
                                 <label for="desparasitacao-mg-bm">BM</label>
-                                <input type="number" id="desparasitacao-mg-bm" class="--border-b">
+                                <input type="number" min="0" id="desparasitacao-mg-bm" data-total="l4-c1-a-c3" data-totaloutput="l4-c4" class="--border-b">
                                 <span>&plus;</span>
                                 <label for="desparasitacao-mg-acs">ACS</label>
-                                <input type="number" id="desparasitacao-mg-acs" class="--border-b">
+                                <input type="number" min="0" id="desparasitacao-mg-acs" data-total="l4-c1-a-c3" data-totaloutput="l4-c4" class="--border-b">
                                 <span>&equals;</span>
-                                <input type="number" readonly class="--border-b">
+                                <input type="number" readonly class="l4-c4 --border-b">
                             </div>
                         </div>
                     </div>
                     <div class="ficha__body__seccao">
-                        <div class="ficha__seccao__linha1 --bg-default --border-thick">
+                        <div class="ficha__seccao__titulo --display-flex-xy-center --bg-default --border-thick">
                             <span class="--fw-700">Mod. SIS - N12 - SULFATO FERROSO & ÁCIDO FÓLICO</span>
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b --fw-700">
-                            <div class="ficha__seccao__linha2__col1 --border-r">
+                            <div class="--display-xy-center txt-center --border-r">
                             </div>
-                            <div class="--bg-default --border-r"><span>1<sup>a</sup> Entrega</span></div>
-                            <div class="--bg-default --border-r"><span>2<sup>a</sup> Entrega</span></div>
-                            <div class="--bg-default --border-r"><span>3<sup>a</sup> Entrega</span></div>
-                            <div class="--bg-default --border-r"><span>4<sup>a</sup> Entrega</span></div>
-                            <div class="--bg-default --border-r"><span>5<sup>a</sup> Entrega</span></div>
-                            <div class="--bg-default --border-r"><span>6<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r"><span>1<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r"><span>2<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r"><span>3<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r"><span>4<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r"><span>5<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r"><span>6<sup>a</sup> Entrega</span></div>
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--border-r"><span><b>Grávidas</b> (Unidade Sanitária)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --border-r"><span><b>Grávidas</b> (Unidade Sanitária)</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--border-r"><span><b>Grávidas</b> (Comunidade)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --border-r"><span><b>Grávidas</b> (Comunidade)</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--border-r"><span><b>Pós-Parto</b> (Unidade Sanitária)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --border-r"><span><b>Pós-Parto</b> (Unidade Sanitária)</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
                             <div class="celula-nao-aplicavel"></div>
                             <div class="celula-nao-aplicavel"></div>
                             <div class="celula-nao-aplicavel --border-r"></div>
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--border-r"><span><b>Pós-Parto</b> (Comunidade)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --border-r"><span><b>Pós-Parto</b> (Comunidade)</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
                             <div class="celula-nao-aplicavel"></div>
                             <div class="celula-nao-aplicavel"></div>
                             <div class="celula-nao-aplicavel --border-r"></div>
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--border-r"><span><b>Adolescentes</b> <small>(10-19 anos)</small> - SAAJ</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --border-r"><span><b>Adolescentes</b> <small>(10-19 anos)</small> - SAAJ</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--border-r"><span><b>Adolescentes</b> <small>(10-19 anos)</small> - Escola</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --border-r"><span><b>Adolescentes</b> <small>(10-19 anos)</small> - Escola</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--border-r"><span><b>Adolescentes</b> <small>(10-19 anos)</small> - Com.</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --border-r"><span><b>Adolescentes</b> <small>(10-19 anos)</small> - Com.</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
                         </div>
                     </div>
                     <div class="ficha__body__seccao">
                         <div class="ficha__seccao__linha--gtc-7 --border-t --border-l --border-b">
-                            <div class="--bg-default --border-r">
+                            <div class="--display-flex-xy-center --bg-default --border-r --fw-700">
                                 <span>MICRONUTRIENTES EM PÓ</span>
                             </div>
-                            <div class="--bg-default --border-r"><span>1<sup>a</sup> Entrega</span></div>
-                            <div class="--bg-default --border-r"><span>2<sup>a</sup> Entrega</span></div>
-                            <div class="--bg-default --border-r"><span>3<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r --fw-700"><span>1<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r --fw-700"><span>2<sup>a</sup> Entrega</span></div>
+                            <div class="--display-flex-xy-center --bg-default --border-r --fw-700"><span>3<sup>a</sup> Entrega</span></div>
                             <div class="--border-r"></div>
                             <div class="--border-r"></div>
                             <div class="--border-r"></div>
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--bg-default --border-r"><span>Unidade Sanitária</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --bg-default --border-r"><span>Unidade Sanitária</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <div class="--border-r"></div>
+                            <div class="--border-r"></div>
+                            <div class="--border-r"></div>
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b">
-                            <div class="--bg-default --border-r"><span>Comunidade</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-y-center --bg-default --border-r"><span>Comunidade</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <div class="--border-r"></div>
+                            <div class="--border-r"></div>
+                            <div class="--border-r"></div>
                         </div>
                     </div>
                     <div class="ficha__body__seccao">
-                        <div class="ficha__seccao4__header --bg-default --border">
+                        <div class="ficha__seccao4__header --bg-default --border --fw-700">
                             <div class="--border-r"></div>
                             <div class="ficha__seccao4__header__col2">
                                 <div class="ficha__seccao4__header__linha-sup">
-                                    <div class="seccao-4__header__linha-sup__col --border-r --border-b">
+                                    <div class="seccao-4__header__linha-sup__col --display-flex-xy-center txt-center --border-r --border-b">
                                         <span>TRIAGEM NUTRICIONAL <br><small>(Perímetro Braquial <br>crianças de 6 a 59 meses)</small></span>
                                     </div>
                                     <div class="seccao4__header__linha-sup__col2 --border-b">
-                                        <div class="ficha__seccao4__en --border-r --border-b"><span>EDUCAÇÃO NUTRICIONAL</span></div>
-                                        <div class="ficha__seccao4_op --border-b"><span>Outros Programas</span></div>
-                                        <div class="ficha__seccao4_palestras --border-r"><span>Palestras</span></div>
-                                        <div class="ficha__seccao4__dc --border-r"><span>Demonstração culinária</span></div>
-                                        <div class="--border-r"><span>Feiras</span></div>
-                                        <div><span>Rádio</span></div>
+                                        <div class="ficha__seccao4__en --display-flex-xy-center --border-r --border-b"><span>EDUCAÇÃO NUTRICIONAL</span></div>
+                                        <div class="ficha__seccao4_op --display-flex-xy-center --border-b"><span>Outros Programas</span></div>
+                                        <div class="ficha__seccao4_palestras --display-flex-xy-center --border-r"><span>Palestras</span></div>
+                                        <div class="ficha__seccao4__dc --display-flex-xy-center --border-r"><span>Demonstração culinária</span></div>
+                                        <div class="--display-flex-xy-center --border-r"><span>Feiras</span></div>
+                                        <div class="--display-flex-xy-center"><span>Rádio</span></div>
                                     </div>
                                 </div>
                                 <div class="ficha__seccao4__header__linha-inf">
-                                    <div class="--border-r"><span>N<sup>o</sup> de <br>Normal</span></div>
-                                    <div class="--border-r"><span>N<sup>o</sup> de <br>Moderada</span></div>
-                                    <div class="--border-r"><span>N<sup>o</sup> de <br>Grave</span></div>
-                                    <div class="--border-r"><span>N<sup>o</sup> de <br>sessões</span></div>
-                                    <div class="--border-r"><span>N<sup>o</sup> de <br>Participante</span></div>
-                                    <div class="--border-r"><span>N<sup>o</sup> de <br>sessões</span></div>
-                                    <div class="--border-r"><span>N<sup>o</sup> de <br>Participante</span></div>
-                                    <div class="--border-r"><span>N<sup>o</sup> de <br>sessões</span></div>
-                                    <div><span>N<sup>o</sup> de <br>sessões</span></div>
+                                    <div class="--display-flex-xy-center --border-r"><span>Nº de <br>Normal</span></div>
+                                    <div class="--display-flex-xy-center --border-r"><span>Nº de <br>Moderada</span></div>
+                                    <div class="--display-flex-xy-center --border-r"><span>Nº de <br>Grave</span></div>
+                                    <div class="--display-flex-xy-center --border-r"><span>Nº de <br>sessões</span></div>
+                                    <div class="--display-flex-xy-center --border-r"><span>Nº de <br>Participante</span></div>
+                                    <div class="--display-flex-xy-center --border-r"><span>Nº de <br>sessões</span></div>
+                                    <div class="--display-flex-xy-center --border-r"><span>Nº de <br>Participante</span></div>
+                                    <div class="--display-flex-xy-center --border-r"><span>Nº de <br>sessões</span></div>
+                                    <div class="--display-flex-xy-center"><span>Nº de <br>sessões</span></div>
                                 </div>
                             </div>
                         </div>
                           <div class="ficha__seccao__linha--gtc-9 --border-l --border-b">
-                            <div class="--bg-default --border-r"><span>Unidade <br>Sanitária</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
+                            <div class="--display-flex-xy-center --bg-default --border-r"><span>Unidade <br>Sanitária</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
                         </div>
                           <div class="ficha__seccao__linha--gtc-9 --border-l --border-r --border-b">
-                            <div class="--bg-default --border-r"><span>Comunidade</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-xy-center --bg-default --border-r"><span>Comunidade</span></div>
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <input type="number" min="0" class="input-celular--focus --border-r">
+                            <div class="celula-nao-aplicavel"></div>
+                            <div class="celula-nao-aplicavel"></div>
                         </div>
                     </div>
                     <div class="ficha__body__seccao">
-                        <div class="ficha__seccao__linha1 --bg-default --border-thick">
+                        <div class="ficha__seccao__titulo --display-flex-xy-center --bg-default --border-thick">
                             <span class="--fw-700">STOCK MENSAL DE SUPLEMENTOS NUTRICIONAIS</span>
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>Suplementos Nutricionais</span></div>
-                            <div class="--border-r"><span>Inicial</span></div>
-                            <div class="--border-r"><span>Recebido</span></div>
-                            <div class="--border-r"><span>Gasto + Perdido</span></div>
-                            <div><span>Disponível</span></div>
+                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b --fw-700">
+                            <div class="--display-flex-xy-center --border-r"><span>Suplementos Nutricionais</span></div>
+                            <div class="--display-flex-xy-center --border-r"><span>Inicial</span></div>
+                            <div class="--display-flex-xy-center --border-r"><span>Recebido</span></div>
+                            <div class="--display-flex-xy-center --border-r"><span>Gasto + Perdido</span></div>
+                            <div class="--display-flex-xy-center"><span>Disponível</span></div>
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>Vitamina A (Cápsulas 200.000UI)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>Vitamina A (Cápsulas 200.000UI)</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l16-c1-a-c2-menos-l16-c3" data-stockdisponiveloutput="l16-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l16-c1-a-c2-menos-l16-c3" data-stockdisponiveloutput="l16-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l16-c1-a-c2-menos-l16-c3" data-stockdisponiveloutput="l16-c4" class="l16-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l16-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>Mebendazol (Comprimidos 500 mg)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>Mebendazol (Comprimidos 500 mg)</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l17-c1-a-c2-menos-l17-c3" data-stockdisponiveloutput="l17-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l17-c1-a-c2-menos-l17-c3" data-stockdisponiveloutput="l17-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l17-c1-a-c2-menos-l17-c3" data-stockdisponiveloutput="l17-c4" class="l17-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l17-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>Albendazol (Comprimidos 400 mg)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>Albendazol (Comprimidos 400 mg)</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l18-c1-a-c2-menos-l18-c3" data-stockdisponiveloutput="l18-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l18-c1-a-c2-menos-l18-c3" data-stockdisponiveloutput="l18-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l18-c1-a-c2-menos-l18-c3" data-stockdisponiveloutput="l18-c4" class="l18-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l18-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>Sulfato ferroso & Ácido fólico 300 + 1 mg</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>Sulfato ferroso & Ácido fólico 300 mg</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l19-c1-a-c2-menos-l19-c3" data-stockdisponiveloutput="l19-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l19-c1-a-c2-menos-l19-c3" data-stockdisponiveloutput="l19-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l19-c1-a-c2-menos-l19-c3" data-stockdisponiveloutput="l19-c4" class="l19-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l19-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>Sulfato ferroso & Ácido fólico 90 + 1 mg</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>Sulfato ferroso & Ácido fólico 90 mg</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l20-c1-a-c2-menos-l20-c3" data-stockdisponiveloutput="l20-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l20-c1-a-c2-menos-l20-c3" data-stockdisponiveloutput="l20-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l20-c1-a-c2-menos-l20-c3" data-stockdisponiveloutput="l20-c4" class="l20-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l20-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>Sulfato ferroso & Ácido fólico 60 mg</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>Sulfato ferroso & Ácido fólico 60 mg</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l21-c1-a-c2-menos-l21-c3" data-stockdisponiveloutput="l21-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l21-c1-a-c2-menos-l21-c3" data-stockdisponiveloutput="l21-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l21-c1-a-c2-menos-l21-c3" data-stockdisponiveloutput="l21-c4" class="l21-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l21-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>PlumpyNut (ATPU/Pacotes)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>PlumpyNut (ATPU/Pacotes)</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l22-c1-a-c2-menos-l22-c3" data-stockdisponiveloutput="l22-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l22-c1-a-c2-menos-l22-c3" data-stockdisponiveloutput="l22-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l22-c1-a-c2-menos-l22-c3" data-stockdisponiveloutput="l22-c4" class="l22-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l22-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>PlumpySup (ASPU/Pacotes)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>PlumpySup (ASPU/Pacotes)</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l23-c1-a-c2-menos-l23-c3" data-stockdisponiveloutput="l23-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l23-c1-a-c2-menos-l23-c3" data-stockdisponiveloutput="l23-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l23-c1-a-c2-menos-l23-c3" data-stockdisponiveloutput="l23-c4" class="l23-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l23-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>CSB (Super Cereal/Sacos de 10 kg)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>CSB (Super Cereal/Sacos de 10 kg)</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l24-c1-a-c2-menos-l24-c3" data-stockdisponiveloutput="l24-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l24-c1-a-c2-menos-l24-c3" data-stockdisponiveloutput="l24-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l24-c1-a-c2-menos-l24-c3" data-stockdisponiveloutput="l24-c4" class="l24-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l24-c4">
                         </div>
                         <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
-                            <div class="--border-r"><span>MNP's (Saquetas)</span></div>
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus --border-r">
-                            <input type="number" class="input--focus">
+                            <div class="--display-flex-y-center --border-r"><span>MNP's (Saquetas)</span></div>
+                            <input type="number" min="0" data-stockdisponivel="l25-c1-a-c2-menos-l25-c3" data-stockdisponiveloutput="l25-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l25-c1-a-c2-menos-l25-c3" data-stockdisponiveloutput="l25-c4" class="input-celular--focus --border-r">
+                            <input type="number" min="0" data-stockdisponivel="l25-c1-a-c2-menos-l25-c3" data-stockdisponiveloutput="l25-c4" class="l25-c3 input-celular--focus --border-r">
+                            <input type="number" min="0" readonly class="l25-c4">
                         </div>
                     </div>
                 </div>
                 <div class="ficha__footer">
-                    <label for="elaborado-por">Elaborado por/</label>
-                    <label for="data-de-elaboracao">Data:</label>
-                    <input type="text" id="elaborado-por" class="input-nao-celular --border-b">
-                    <input type="date" id="data-de-elaboracao" class="input-nao-celular --border-b">
+                    <label for="input-elaborado-por">Elaborado por/</label>
+                    <label for="input-data-de-elaboracao">Data:</label>
+                    <input type="text" id="input-elaborado-por" class="input-nao-celular --border-b">
+                    <input type="date" id="input-data-de-elaboracao" class="input-nao-celular --border-b">
                 </div>
+                <p class="ficha__url-pub"></p>
             </div>
             <button class="main__btn-fixed main__btn-fixed--light main__btn-fixed--share --no-print" title="Partilhar totalizador">
                 <svg style="width: 25px; height: 20px;">
@@ -460,7 +462,7 @@
                 <span class="obs__label --fw-700">Observações:</span>
                 <p contenteditable="true" id="input-obs" class="obs__input"></p>
             </div>
-            <div class="reference --no-print">
+            <div class="reference --no-print --display-none">
                 <div class="layout-row layout-row--of-reference">
                     <span class="reference__label">Indicador:</span> 
                     <output class="reference__output reference__output--indicador --display-flex-y-center"></output>
@@ -471,14 +473,14 @@
         </main>   
         <section class="dialog-boxes --no-print">
             <div class="dialog-box-default dialog-box-default--sobre-aqd">
-                <h3 class="dialog-box-default__title">Totalizador de Resumo Mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr></h3>
+                <h3 class="dialog-box-default__title">Totalizador de Resumo Mensal de Nutrição</h3>
                 <p class="dialog-box-default__p">O totalizador garante um resumo mensal correctamente totalizado, porém, um resumo mensal de qualidade não se limita apenas à uma correcta totalização. Outros factores, independentes do totalizador, como preenchimento correcto e legível dos livros de registo, colheita de dados abrangente a todas as fontes primárias com informação do mês em reporte, cruzamento e concordância dos dados, entre outros, contribuem sobremaneira para a qualidade de um resumo mensal.</p>
                 <div class="dialog-box-default__btn-container">
                     <button class="dialog-box-default__btn dialog-box-default__btn--aqd">Entendi</button>
                 </div>
             </div>
             <div class="dialog-box-default dialog-box-default--small">
-                <h3 class="dialog-box-default__title">Totalizador de Resumo Mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr></h3>
+                <h3 class="dialog-box-default__title">Totalizador de Resumo Mensal de Nutrição</h3>
                 <p class="dialog-box-default__p dialog-box-default__p--js-console --display-flex-y-center"></p>
                 <div class="dialog-box-default__btn-container">
                     <button class=dialog-box-default__btn>Fechar <span class="dialog-box-default__output-autoclose-loop"></span></button>
@@ -519,16 +521,16 @@
                         <label for=checkbox-us>US</label>
                     </li>
                     <li>
-                        <input type=checkbox id=checkbox-mes checked data-for=input-mes>
-                        <label for=checkbox-mes>Mês</label>
+                        <input type=checkbox id=checkbox-mes checked data-for=input-mes-ano>
+                        <label for=checkbox-mes>Mês/Ano</label>
                     </li>
                     <li>
-                        <input type=checkbox id=checkbox-data checked data-for=input-data>
+                        <input type=checkbox id=checkbox-assinatura checked data-for=input-elaborado-por>
+                        <label for=checkbox-assinatura>Elaborado por</label>
+                    </li>
+                    <li>
+                        <input type=checkbox id=checkbox-data checked data-for=input-data-de-elaboracao>
                         <label for=checkbox-data>Data</label>
-                    </li>
-                    <li>
-                        <input type=checkbox id=checkbox-assinatura checked data-for=input-assinatura>
-                        <label for=checkbox-assinatura>Assinatura</label>
                     </li>
                     <li>
                         <input type=checkbox id=checkbox-obs checked data-for=input-obs>
@@ -547,12 +549,12 @@
                 <figure>
                     <img alt="Totalizador de Resumo Mensal de Nutrição" src=imagens/totalizador-de-resumo-mensal-de-nutricao.png class="artigo__img artigo__img--center">
                 </figure>   
-                <p>O <strong>Totalizador de Resumo Mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr></strong> é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes &ge; 15 anos) por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr> actualmente vigente no Serviço Nacional de Saúde em Moçambique.</p>
+                <p>O <strong>Totalizador de Resumo Mensal de Nutrição</strong> é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de nutrição por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de nutrição actualmente vigente no Serviço Nacional de Saúde em Moçambique.</p>
                 <h3 class="artigo__titulo artigo__titulo--nivel-2">Objectivos</h3>
                 <ul class="artigo__lista artigo__lista--ul">
-                    <li>Auxiliar os profissionais de saúde na totalização do resumo mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr> com exatidão e prontidão;</li>
+                    <li>Auxiliar os profissionais de saúde na totalização do resumo mensal de nutrição com exatidão e prontidão;</li>
                     <li>Minimizar possíveis erros de totalização (por exemplo, somar involuntariamente células não correspondentes ou registar o total da linha A, na linha B);</li>
-                    <li>Expandir o acesso à ficha de resumo mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr>.</li>
+                    <li>Expandir o acesso à ficha de resumo mensal de nutrição.</li>
                 </ul>
                 <h3 class="artigo__titulo artigo__titulo--nivel-2 ">O que eu preciso dispor para, e como utilizar o totalizador?</h3>
                 <ul class="artigo__lista artigo__lista--ul">
@@ -581,34 +583,9 @@
             <article class="artigo artigo--ajuda layout-row layout-row--no-padding">
                 <h2 class="artigo__titulo artigo__titulo--nivel-1 artigo__titulo--ajuda-e-procedimentos">Ajuda e Procedimentos</h2>
                 <details class="artigo__details">
-                    <summary class="details__summary">Instruções de preenchimento</summary>
-                    <h3 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--no-border-t">INSTRUÇÕES DE PREENCHIMENTO DO RESUMO MENSAL DO PRN PARA PACIENTES ≥ 15 ANOS</h3>
-                    <p><b>A - Pacientes no início do mês:</b> Insira os dados do campo "Nº de pacientes que transitam para o mês seguinte" do resumo mensal do mês anterior.</p></b>
-                    <h3 class="artigo__titulo artigo__titulo--nivel-3">Admissões (B)</h3> 
-                    <p><b>B1 -  Nº de pacientes admitidos com desnutrição aguda moderada (DAM) com HIV+:</b> Digite a soma da coluna 17 do livro de registo correspondente a cada consulta relevante (Triagem, TB, CPN, CPP e TARV).</p>  
-                    <p><b>B2 -  Nº de pacientes admitidos com desnutrição aguda moderada (DAM) com HIV- ou desconhecido:</b> Digite a soma da coluna 18 do livro de registo.</p> 
-                    <p><b>B3 -  Nº de pacientes admitidos com desnutrição aguda grave (DAG) com HIV+:</b> Digite a soma da coluna 19 do livro de registo.</p> 
-                    <p><b>B4 -  Nº de pacientes admitidos com desnutrição aguda grave (DAG) com HIV- ou desconhecido:</b> Digite a soma da coluna 20 do livro de registo.</p> 
-                    <p><b>Total (coluna):</b> O totalizador calcula e preenche automaticamente a soma dos pacientes da Triagem, TB, CPN, CPP e TARV.</p> 
-                    <p><b>Total admissões:</b> O totalizador calcula e preenche automaticamente o resultado da soma de B1 a B4.</p> 
-                    <h3 class="artigo__titulo artigo__titulo--nivel-3">Altas (C)</h3>
-                    <p><b>C1 -  Curados:</b> Digite a soma da coluna 24 do livro de registo.</p> 
-                    <p><b>C2 -  Abandonos:</b> Digite a soma da coluna 25 do livro de registo.</p> 
-                    <p><b>C3 -  Óbitos:</b> Digite a soma da coluna 26 do livro de registo.</p> 
-                    <p><b>C4 -  Referidos para TDI:</b> Digite a soma da coluna 27 do livro de registo.</p> 
-                    <p><b>C5 - Transferidos para outro sector ou US:</b> Digite a soma da coluna 28 do livro de registo.</p> 
-                    <p><b>Total Altas:</b> O totalizador calcula e preenche automaticamente o resultado da soma de C1 a C5.</p>
-                    <p><b>Nº de pacientes que transitam para o mês seguinte (A+B-C):</b> O totalizador calcula e preenche automaticamente o resultado da soma de pacientes no início do mês (A) e total de admissões (B) menos total de altas (C).</p>
-                    <p class="info-content info-content--no-shadow">A fonte de informação é o Livro de Registo do PRN para Pacientes ≥ 15 Anos.</p>
-                </details>
-                <details class="artigo__details">
                     <summary class="details__summary">Realçar totais</summary>
                     <p>Adiciona cor de fundo amarela às células dos totais. Essas têm o acesso interdito e a funcionalidade de realçá-las, permite distinguí-las facilmente das outras células. Muito útil em celulares.</p>
                     <p class="info-content info-content--no-shadow">A cor de realce de fundo  das células não afecta a impressão.</p>
-                </details>
-                <details class="artigo__details">
-                     <summary class="details__summary">Ir para a linha...</summary>
-                    <p>Abre um campo no qual pode digitar um número de linha no formato <b>LETRANÚMERO</b> (ex.: <b>C5</b>) e, uma vez digitado o número, a página rola até a linha correspondente ao número.</p>
                 </details>
                 <details class="artigo__details">
                     <summary class="details__summary">Esvaziar ficha</summary>
@@ -650,7 +627,7 @@
                         <img src="imagens/atalho-celula-vazia-igual-a-zero.png" alt="Atalho 'Célula vazia igual a zero'" class="artigo__img" />
                     </figure>
                 </details>
-                <p class="artigo-ajuda__p--contactar-suporte">Se os tópicos acima não cobrem as suas dúvidas, pode ainda solicitar suporte ao desenvolvedor através do endereço electrónico <a href="mailto:quinamine.aderitofelix@gmail.com?subject=Totalizador%20de%20Resumo%20Mensal%20de%20PRN%20II">quinamine.aderitofelix@gmail.com</a> ou através do <a href="https://wa.me/258846709901/?text=Olá%2C+Quinamine!+Sobre+o+*totalizador+de+resumo+mensal+de+PRN+II*%2C+tenho+a+seguinte+dúvida%3A%20">WhatsApp</a>.</p>
+                <p class="artigo-ajuda__p--contactar-suporte">Se os tópicos acima não cobrem as suas dúvidas, pode ainda solicitar suporte ao desenvolvedor através do endereço electrónico <a href="mailto:quinamine.aderitofelix@gmail.com?subject=Totalizador%20de%20Resumo%20Mensal%20de%20Nutrição">quinamine.aderitofelix@gmail.com</a> ou através do <a href="https://wa.me/258846709901/?text=Olá%2C+Quinamine!+Sobre+o+*totalizador+de+resumo+mensal+de+nutrição*%2C+tenho+a+seguinte+dúvida%3A%20">WhatsApp</a>.</p>
                 <button class="artigo__btn-x artigo__btn-x--fechar-ajuda" title="Fechar">&times;</button>
             </article>
         </section>
@@ -659,6 +636,7 @@
                 <nav class=footer__nav>
                     <h4 class="footer__nav__title">Hiperligações para outros serviços afins</h4>
                     <ul>
+                        <li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-nutricao/index.html class="footer__nav__link">Totalizador de Resumo Mensal de Nutrição</a></li>
                         <li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-its/index.html class="footer__nav__link">Totalizador de Resumo Mensal de ITS</a></li>
                         <li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-doenca-avancada-por-hiv/index.html class="footer__nav__link">Totalizador de Resumo Mensal de Doença Avançada por HIV</a></li>
                         <li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-prep/index.html class="footer__nav__link">Totalizador de Resumo Mensal de PrEP</a></li>
@@ -689,10 +667,10 @@
                         <li><a href=https://quinamine.github.io/calculadora-de-doses-pediatricas/index.html class="footer__nav__link">Calculadora de Doses Pediátricas</a></li>
                     </ul>
                 </nav>
-                <p class="footer__p footer__p--created-by">Criado com atenção e <span class="footer__p__heart">❤</span> por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html title="Acessar biografia &raquo;" class="footer__aw-thuh">Adérito Félix Quinamine</a> | ©&nbsp;<span class="footer__current-year"></span> Totalizador de Resumo Mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr></p>
+                <p class="footer__p footer__p--created-by">Criado com atenção e <span class="footer__p__heart">❤</span> por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html title="Acessar biografia &raquo;" class="footer__aw-thuh">Adérito Félix Quinamine</a> | ©&nbsp;<span class="footer__current-year"></span> Totalizador de Resumo Mensal de Nutrição</p>
                 <a href=#root class=footer__link--back-to-top>Rolar para o topo</a>
             </div>
-            <p class="footer__p footer__p--available-since">Disponível desde <time datetime="2023-02-03">03/02/2023</time>. Última actualização: Agosto/2025.</p>
+            <p class="footer__p footer__p--available-since">Disponível desde <time datetime="2023-02-03">13/08/2025</time>.</p>
         </footer>
         <div class="desfoque --no-print"></div>
         <script src="fisiologia/festasfelizes.js"></script>

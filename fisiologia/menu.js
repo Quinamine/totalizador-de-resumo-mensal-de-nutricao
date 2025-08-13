@@ -60,7 +60,7 @@ const menu = {
         return {  
             dialogBox: document.querySelector(".dialog-box-esvaziar-ficha"),
             abrirDialogBox() { 
-                const inputsDaFicha = document.querySelectorAll("[data-totaleixox], [readonly], .input-nao-celular");
+                const inputsDaFicha = document.querySelectorAll(".ficha input");
                 const campoDeObs = document.querySelector(".obs__input");
                 let inputFilled = 0;
                 campoDeObs.textContent.length > 0 && (inputFilled = 1);
@@ -80,9 +80,8 @@ const menu = {
                 desfoqueDoFundo("focar");
             },
             confirmar() {
-                const inputsCelulares  = document.querySelectorAll("[data-totaleixox], [readonly]");
+                const inputsCelulares  = document.querySelectorAll("[data-total], [readonly], .input-celular--focus");
                 const checkboxesParaInputsNaoCelulares = document.querySelectorAll("[data-for]");
-    
                 for (let i = 0; i < inputsCelulares.length; i++) {
                     inputsCelulares[i].value = "";
                     localStorage.removeItem(`${keyPrefix}-input${i}`);
@@ -106,7 +105,7 @@ const menu = {
     imprimirFicha() {
         const comentarios = document.querySelector(".obs__input");
         comentarios.textContent === "" ? comentarios.parentElement.classList.add("--no-print") : comentarios.parentElement.classList.remove("--no-print");
-        let inputsCelulares = document.querySelectorAll("[data-totaleixox]");
+        let inputsCelulares = document.querySelectorAll("[data-total], .input-celular--focus");
         let icPreenchidas = 0;
         let totalizadoPor;
         for(const ic of inputsCelulares) {
@@ -218,7 +217,7 @@ function eventos() {
     // PARTILHAR 
     const data = {
         title: "Totalizador de Resumo Mensal de Nutrição",
-        text: "Totaliza automaticamente o resumo mensal de Nutrição com base nos dados inseridos pelo usuário. Foi desenvolvido de acordo com o modelo da respectiva ficha de resumo mensal actualmente vigente no Serviço Nacional de Saúde em Moçambique.",
+        text: "Totaliza automaticamente o resumo mensal de nutrição com base nos dados inseridos pelo usuário. Foi desenvolvido de acordo com o modelo da respectiva ficha de resumo mensal actualmente vigente no Serviço Nacional de Saúde em Moçambique.",
         url: "https://quinamine.github.io/totalizador-de-resumo-mensal-de-nutricao/index.html"
     }
     const btnPartilhar = document.querySelector(".main__btn-fixed--share");
