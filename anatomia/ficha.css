@@ -22,6 +22,9 @@
     display: block;
     margin: auto;
 }
+.ficha__header__linha-de-prov-dis-us-mes {
+    min-height: 21px;
+}
 .ficha__linha-de-prov-dis-us-mes__col {
     overflow: hidden;
     min-height: 20px;
@@ -129,6 +132,7 @@
 .ficha__footer {
     margin-top: 5px;
     min-height: 22px;
+    justify-content: space-around;
 }
 #input-elaborado-por {
     width: 620px;
