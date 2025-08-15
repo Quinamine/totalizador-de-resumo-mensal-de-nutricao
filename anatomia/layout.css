@@ -472,6 +472,20 @@
     background-color: var(--gray-light);
     padding: 15px;
 }
+.artigo-ajuda__p-com-seta {
+    position: relative;
+    border-bottom: 1px solid var(--cor-de-link);
+}
+.artigo-ajuda__p-com-seta__seta {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 9px solid transparent;
+    border-top-color: var(--blue-cobalt);
+    position: absolute;
+    bottom: -18px;
+    left: 26px;
+}
 .artigo__lista {
     margin-left: 30px;
 }

@@ -24,7 +24,7 @@ function alertarSobre(msg) {
     dialogBoxDefault.classList.add("--open");
 }
 function destacarCelulasComConteudoOmisso() {
-    const celulas = document.querySelectorAll("[data-total], .input-celular--focus, readonly");
+    const celulas = document.querySelectorAll("[data-total], .input-celular--focus, [readonly]");
     let celulasSaturadas = 0;
     for(const c of celulas) {
         c.classList.remove("input--bg-color-danger");
@@ -37,7 +37,7 @@ function destacarCelulasComConteudoOmisso() {
         } else if(c.clientWidth < 105 && c.value.length > 12) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
-        } else if(c.clientWidth < 120 && c.value.length > 14) {
+        } else if(c.clientWidth < 120 && c.value.length > 13) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
         } else if(c.clientWidth > 120 && c.value.length > 18) {
@@ -56,7 +56,7 @@ function destacarCelulasComConteudoOmisso() {
     }  
 }
 function removerDestaqueDeRedCells() {
-    const celulas = document.querySelectorAll("[data-total], .input-celular--focus, readonly");
+    const celulas = document.querySelectorAll("[data-total], .input-celular--focus, [readonly]");
     for (const c of celulas) c.classList.remove("input--bg-color-danger");
 }
 function removerBordaDoMovitoDeRedCells() {
