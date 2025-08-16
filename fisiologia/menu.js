@@ -110,7 +110,6 @@ const menu = {
         let totalizadoPor;
         for(const ic of inputsCelulares) {
             ic.value.length > 0 && icPreenchidas++;
-            ic.placeholder = "";
         }
         if(icPreenchidas > 0) {totalizadoPor = "Totalizado por computador. "} 
         else {totalizadoPor = "";}
@@ -119,7 +118,6 @@ const menu = {
         if(window.location.protocol == "file:") {
             url = url.split("/totalizador-de-")[1];
             url = `https://quinamine.github.io/totalizador-de-${url}`;
-            console.log(url)
         }
         const title = document.title;
         urlOutput.innerHTML = `${totalizadoPor}${title} disponível em: <span class="ficha__url-pub__link">${url}</span>`;

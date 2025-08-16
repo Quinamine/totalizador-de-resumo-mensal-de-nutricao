@@ -128,10 +128,13 @@
     display: grid;
     grid-template-columns: 277px repeat(4, 155.25px);
     grid-template-rows: 26px;
+    font-size: 13.5px;
 }
 .ficha__footer {
     margin-top: 5px;
     min-height: 22px;
+    display: flex;
+    align-items: flex-end;
     justify-content: space-around;
 }
 #input-elaborado-por {

@@ -31,16 +31,16 @@ function destacarCelulasComConteudoOmisso() {
         if(c.clientWidth < 55 && c.value.length > 6) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
-        } else if(c.clientWidth < 70 && c.value.length > 7) {
+        } else if(c.clientWidth < 70 && c.value.length > 8) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
-        } else if(c.clientWidth < 105 && c.value.length > 12) {
+        } else if(c.clientWidth < 105 && c.value.length > 13) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
-        } else if(c.clientWidth < 120 && c.value.length > 13) {
+        } else if(c.clientWidth < 120 && c.value.length > 14) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
-        } else if(c.clientWidth > 120 && c.value.length > 18) {
+        } else if(c.clientWidth > 120 && c.value.length > 19) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
         }
@@ -177,6 +177,7 @@ window.addEventListener("load", () => {
         setTimeout(() => {Tooltip.omitir(tooltipVazioIgualZero);}, 8500);
         setTimeout(() => {
             Tooltip.mostrar(tooltipMenuAjuda);
+            document.body.scrollIntoView();
             if(window.innerWidth < 510) {
                 const btnMenuAjuda = document.querySelector(".header__menu__btn--ajuda").parentElement;
                 let cssValueForPropertyRight = btnMenuAjuda.clientWidth / 2 - 14;

@@ -22,6 +22,15 @@
         <script src="fisiologia/multifuncoes.js"></script>
         <script src="fisiologia/db.js"></script>
         <script src="fisiologia/referencia.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G8V09K7SCL"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G8V09K7SCL');
+        </script>
         <noscript>O seu navegador está com o JavaScript desabilitado e isso bloqueia as funcionalidades do totalizador. Habilite-o nas configurações do navegador e recarregue a página.</noscript>
     </head>
      <body id="body" class="body-com-topo-info" ontouchstart="">
@@ -150,7 +159,7 @@
                             <span class="--fw-700">Mod. SIS - N07 - DESPARASITAÇÃO</span>
                         </div>
                         <div class="ficha__seccao__linha--gtc-2 --border-l --border-r --border-b">
-                            <div class="--display-xy-center txt-center --border-r">
+                            <div class="--display-flex-xy-center txt-center --border-r">
                                 <span><b>CRIANÇAS (12 - 59 meses)</b> <br><small>(Mebendazol ou Albendazol)</small></span>
                             </div>
                             <div class="ficha__seccao2-linha-us-bm-acs --fw-700">
@@ -187,7 +196,7 @@
                             <span class="--fw-700">Mod. SIS - N12 - SULFATO FERROSO & ÁCIDO FÓLICO</span>
                         </div>
                         <div class="ficha__seccao__linha--gtc-7 --border-l --border-b --fw-700">
-                            <div class="--display-xy-center txt-center --border-r">
+                            <div class="--display-flex-xy-center txt-center --border-r">
                             </div>
                             <div class="--display-flex-xy-center --bg-default --border-r"><span>1<sup>a</sup> Entrega</span></div>
                             <div class="--display-flex-xy-center --bg-default --border-r"><span>2<sup>a</sup> Entrega</span></div>
@@ -357,70 +366,70 @@
                             <div class="--display-flex-xy-center --border-r"><span>Gasto + Perdido</span></div>
                             <div class="--display-flex-xy-center"><span>Disponível</span></div>
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>Vitamina A (Cápsulas 200.000UI)</span></div>
                             <input type="number" min="0" data-stockdisponivel="l16-c1-a-c2-menos-l16-c3" data-stockdisponiveloutput="l16-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l16-c1-a-c2-menos-l16-c3" data-stockdisponiveloutput="l16-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l16-c1-a-c2-menos-l16-c3" data-stockdisponiveloutput="l16-c4" class="l16-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l16-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>Mebendazol (Comprimidos 500 mg)</span></div>
                             <input type="number" min="0" data-stockdisponivel="l17-c1-a-c2-menos-l17-c3" data-stockdisponiveloutput="l17-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l17-c1-a-c2-menos-l17-c3" data-stockdisponiveloutput="l17-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l17-c1-a-c2-menos-l17-c3" data-stockdisponiveloutput="l17-c4" class="l17-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l17-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>Albendazol (Comprimidos 400 mg)</span></div>
                             <input type="number" min="0" data-stockdisponivel="l18-c1-a-c2-menos-l18-c3" data-stockdisponiveloutput="l18-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l18-c1-a-c2-menos-l18-c3" data-stockdisponiveloutput="l18-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l18-c1-a-c2-menos-l18-c3" data-stockdisponiveloutput="l18-c4" class="l18-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l18-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>Sulfato ferroso & Ácido fólico 300 mg</span></div>
                             <input type="number" min="0" data-stockdisponivel="l19-c1-a-c2-menos-l19-c3" data-stockdisponiveloutput="l19-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l19-c1-a-c2-menos-l19-c3" data-stockdisponiveloutput="l19-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l19-c1-a-c2-menos-l19-c3" data-stockdisponiveloutput="l19-c4" class="l19-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l19-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>Sulfato ferroso & Ácido fólico 90 mg</span></div>
                             <input type="number" min="0" data-stockdisponivel="l20-c1-a-c2-menos-l20-c3" data-stockdisponiveloutput="l20-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l20-c1-a-c2-menos-l20-c3" data-stockdisponiveloutput="l20-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l20-c1-a-c2-menos-l20-c3" data-stockdisponiveloutput="l20-c4" class="l20-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l20-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>Sulfato ferroso & Ácido fólico 60 mg</span></div>
                             <input type="number" min="0" data-stockdisponivel="l21-c1-a-c2-menos-l21-c3" data-stockdisponiveloutput="l21-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l21-c1-a-c2-menos-l21-c3" data-stockdisponiveloutput="l21-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l21-c1-a-c2-menos-l21-c3" data-stockdisponiveloutput="l21-c4" class="l21-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l21-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>PlumpyNut (ATPU/Pacotes)</span></div>
                             <input type="number" min="0" data-stockdisponivel="l22-c1-a-c2-menos-l22-c3" data-stockdisponiveloutput="l22-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l22-c1-a-c2-menos-l22-c3" data-stockdisponiveloutput="l22-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l22-c1-a-c2-menos-l22-c3" data-stockdisponiveloutput="l22-c4" class="l22-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l22-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>PlumpySup (ASPU/Pacotes)</span></div>
                             <input type="number" min="0" data-stockdisponivel="l23-c1-a-c2-menos-l23-c3" data-stockdisponiveloutput="l23-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l23-c1-a-c2-menos-l23-c3" data-stockdisponiveloutput="l23-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l23-c1-a-c2-menos-l23-c3" data-stockdisponiveloutput="l23-c4" class="l23-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l23-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>CSB (Super Cereal/Sacos de 10 kg)</span></div>
                             <input type="number" min="0" data-stockdisponivel="l24-c1-a-c2-menos-l24-c3" data-stockdisponiveloutput="l24-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l24-c1-a-c2-menos-l24-c3" data-stockdisponiveloutput="l24-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l24-c1-a-c2-menos-l24-c3" data-stockdisponiveloutput="l24-c4" class="l24-c3 input-celular--focus --border-r">
                             <input type="number" min="0" readonly class="l24-c4">
                         </div>
-                        <div class="ficha__seccao__linha--gtc-5 --bg-default --border-l --border-r --border-b">
+                        <div class="ficha__seccao__linha--gtc-5 --border-l --border-r --border-b">
                             <div class="--display-flex-y-center --border-r"><span>MNP's (Saquetas)</span></div>
                             <input type="number" min="0" data-stockdisponivel="l25-c1-a-c2-menos-l25-c3" data-stockdisponiveloutput="l25-c4" class="input-celular--focus --border-r">
                             <input type="number" min="0" data-stockdisponivel="l25-c1-a-c2-menos-l25-c3" data-stockdisponiveloutput="l25-c4" class="input-celular--focus --border-r">
@@ -429,7 +438,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ficha__footer --display-flex-y-center">
+                <div class="ficha__footer">
                     <label for="input-elaborado-por">Elaborado&nbsp;por/</label>
                     <label for="input-data-de-elaboracao">Data:</label>
                     <input type="text" id="input-elaborado-por" class="input-nao-celular --border-b">
@@ -506,7 +515,7 @@
                     <p class="dialog-box-esvaziar-ficha__p dialog-box-esvaziar-ficha__p--alerta">Esta acção não pode ser desfeita.</p>
                 </div>
                 <h4 class="dialog-box-esvaziar-ficha__titulo dialog-box-esvaziar-ficha__titulo--no-margin-b --fw-700">Inclusive os campos de:</h4>
-                <p class="dialog-box-esvaziar-ficha__p dialog-box-esvaziar-ficha__p--fs-small">Desmarque os que não deseja esvaziar.</p>
+                <p class="dialog-box-esvaziar-ficha__p dialog-box-esvaziar-ficha__p-tooltip"><span class="--hide-on-mobile">Clique</span><span class="--hide-on-desktop">Toque</span> para desmarcar os que não deseja esvaziar. <span class="artigo-ajuda__p-tooltip__arrow"></span></p>
                 <ul class=dialog-box-esvaziar-ficha__ul-dados-adicionais>
                     <li>
                         <input type=checkbox checked id="checkbox-prov" data-for=input-provincia>
@@ -582,7 +591,7 @@
             </article>
             <article class="artigo artigo--ajuda layout-row layout-row--no-padding">
                 <h2 class="artigo__titulo artigo__titulo--nivel-1 artigo__titulo--ajuda-e-procedimentos">Ajuda e Procedimentos</h2>
-                <p class="artigo-ajuda__p--smaller artigo-ajuda__p-com-seta"><span class="--hide-on-mobile">Clique</span><span class="--hide-on-desktop">Toque</span> num titulo para ler o conteúdo relacionado. <span class="artigo-ajuda__p-com-seta__seta"></span></p>
+                <p class="artigo-ajuda__p--smaller artigo-ajuda__p-tooltip"><span class="--hide-on-mobile">Clique</span><span class="--hide-on-desktop">Toque</span> num título para ler o conteúdo relacionado. <span class="artigo-ajuda__p-tooltip__arrow"></span></p>
                 <details class="artigo__details">
                     <summary class="details__summary">Realçar totais</summary>
                     <p>Adiciona cor de fundo amarela às células dos totais. Essas têm o acesso interdito e a funcionalidade de realçá-las, permite distinguí-las facilmente das outras células. Muito útil em celulares.</p>
