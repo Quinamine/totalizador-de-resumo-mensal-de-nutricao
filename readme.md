@@ -2,7 +2,7 @@
 
 ![Trecho do Totalizador do Resumo Mensal de Nutrição](imagens/totalizador-de-resumo-mensal-de-nutricao.png)
 
-O **Totalizador de Resumo Mensal de Nutrição** é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de nutrição por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi desenvolvido de acordo com o modelo da ficha de resumo mensal de nutrição actualmente vigente no Serviço Nacional de Saúde em Moçambique.
+O **Totalizador de Resumo Mensal de Nutrição** é um serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de nutrição por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi desenvolvido de acordo com o modelo da ficha de resumo mensal de nutrição actualmente vigente no Serviço Nacional de Saúde em Moçambique.
 
 
 ## Objectivos
